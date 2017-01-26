@@ -13,12 +13,17 @@
 	}
 	
 	&__text-content {
+		padding-top: 88px;
 		position: absolute;
 		text-align: center;
 		top: 50%;
 		transform: translateY(-50%);
 		left: 0;
 		width: 100%;	
+		
+		@mixin atMedium {
+			padding-top: 60px;
+		}
 	}
 	
 	&__title {
