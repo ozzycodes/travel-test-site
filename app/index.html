@@ -11,6 +11,7 @@
 		
 		<link href='temp/styles/style.css' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet'>
+		<script src="/temp/scripts/Vendor.js"></script>
 		<title>Clear View Escapes</title>
   
 	</head>
@@ -81,7 +82,7 @@
 				
 				<div class="wrapper wrapper__medium wrapper__b-margin">
 					<picture>
-						<img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/first-trip-low-res-i.jpg 565w, assets/images/first-trip-i.jpg 976w, assets/images/first-trip-hi-dpi-i.jpg 1952w," alt="Couple walking down a street.">
+						<img class="lazyload" sizes="(min-width: 970px) 976px, 100vw" data-srcset="assets/images/first-trip-low-res-i.jpg 565w, assets/images/first-trip-i.jpg 976w, assets/images/first-trip-hi-dpi-i.jpg 1952w," alt="Couple walking down a street.">
 					</picture>
 				</div>
 				
@@ -93,9 +94,9 @@
 
 					<div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
 						<picture>
-							<source sizes="404px" srcset="assets/images/our-start-i.jpg 404w, assets/images/our-start-hi-dpi-i.jpg 808w" media="(min-width: 1020px)">
-							<source sizes="320px" srcset="assets/images/our-start-portrait-i.jpg 382w, assets/images/our-start-portrait-hi-dpi-i.jpg 764w" media="(min-width: 800px)">
-							<img srcset="assets/images/our-start-landscape-i.jpg 800w, assets/images/our-start-landscape-hi-dpi-i.jpg 1600w" alt="Our founder, Jane Doe">
+							<source sizes="404px" data-srcset="assets/images/our-start-i.jpg 404w, assets/images/our-start-hi-dpi-i.jpg 808w" media="(min-width: 1020px)">
+							<source sizes="320px" data-srcset="assets/images/our-start-portrait-i.jpg 382w, assets/images/our-start-portrait-hi-dpi-i.jpg 764w" media="(min-width: 800px)">
+							<img class="lazyload" data-srcset="assets/images/our-start-landscape-i.jpg 800w, assets/images/our-start-landscape-hi-dpi-i.jpg 1600w" alt="Our founder, Jane Doe">
 						</picture>
 					</div>
 					
@@ -167,7 +168,7 @@
 <!-- !TESTIMONIALS -->
 <!-- ================================== -->
 
-		<div id="testimonials" class="page-section page-section__testimonials page-section__no-b-padding-until-large" data-matching-link="#testimonials-link">
+		<div id="testimonials" class="page-section page-section__testimonials page-section__no-b-padding-until-large lazyload" data-matching-link="#testimonials-link">
 			
 			<div class="wrapper wrapper__no-padding-until-large">
 				
@@ -180,7 +181,7 @@
 							<div class="testimonial">
 								
 								<div class="testimonial__photo">
-									<img sizes="160px" srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="Jane Doe">
+									<img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="Jane Doe">
 								</div><!-- End of testimonial photo -->
 								
 								<h3 class="testimonial__title">Jane Doe</h3>
@@ -193,7 +194,7 @@
 							<div class="testimonial">
 								
 								<div class="testimonial__photo">
-									<img sizes="160px" srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w" alt="John Smith">
+									<img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w" alt="John Smith">
 								</div><!-- End of testimonial photo -->
 								
 								<h3 class="testimonial__title">John Smith</h3>
@@ -206,7 +207,7 @@
 							<div class="testimonial testimonial__last">
 								
 								<div class="testimonial__photo">
-									<img sizes="160px" srcset="assets/images/testimonial-cat-i.jpg 160w, assets/images/testimonial-cat-hi-dpi-i.jpg 320w" alt="cat">
+									<img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-cat-i.jpg 160w, assets/images/testimonial-cat-hi-dpi-i.jpg 320w" alt="cat">
 								</div><!-- End of testimonial photo -->
 								
 								<h3 class="testimonial__title">Cat McKitty</h3>
@@ -254,6 +255,7 @@
 <!-- !SCRIPTS -->
 <!-- ================================== -->
 		<script src="/temp/scripts/App.js"></script>
+		
 
 	</body>
 </html>
